@@ -37,5 +37,7 @@
   "training_box.training1.date": "2018 - 2021",
   "training_box.training1.title": "Baccalauréat général",
   "training_box.training1.location": "Lycée Rosa Parks, 91230 Montgeron",
-  "training_box.training1.desc": "Enseignements de spécialité : Informatique, Mathématiques, Cinéma\nOptions : Cinéma\nMention assez bien"
+  "training_box.training1.desc": "Enseignements de spécialité : Informatique, Mathématiques, Cinéma\nOptions : Cinéma\nMention assez bien",
+
+  "word.now.with_uppercase": "Maintenant"
 }
