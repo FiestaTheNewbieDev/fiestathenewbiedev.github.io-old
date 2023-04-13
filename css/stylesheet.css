@@ -48,6 +48,12 @@ div.skills-box {
     padding-bottom: 5%;
 }
 
+div.training-box {
+    padding-top: 5%;
+    padding-inline: 10%;
+    padding-bottom: 5%;
+}
+
 div.skill-item {
     padding-left: 1%;
     padding-right: 1%;

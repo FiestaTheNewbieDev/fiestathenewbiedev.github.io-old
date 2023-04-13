@@ -25,5 +25,17 @@
 
   "skills_box.title": "Compétences",
   "skills_box.programming_language.title": "Langages informatiques",
-  "skills_box.language.title": "Langues"
+  "skills_box.language.title": "Langues",
+
+  "training_box.title": "Formation",
+
+  "training_box.training2.date": "2021 - Maintenant",
+  "training_box.training2.title": "Licence informatique",
+  "training_box.training2.location": "Université Paris-Est Créteil, 94000 Créteil",
+  "training_box.training2.desc": "Deuxième année",
+
+  "training_box.training1.date": "2018 - 2021",
+  "training_box.training1.title": "Baccalauréat général",
+  "training_box.training1.location": "Lycée Rosa Parks, 91230 Montgeron",
+  "training_box.training1.desc": "Enseignements de spécialité : Informatique, Mathématiques, Cinéma\nOptions : Cinéma\nMention assez bien"
 }
