@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Redirecting to another URL</title>
         <meta id="redirect" http-equiv="Refresh"/>
     </head>
     <body>
@@ -9,14 +10,14 @@
                 var userLang = navigator.language || navigator.userLanguage;
 
                 if(userLang == "fr-FR") {
-                    document.getElementById("redirect").content = "3; url=fr.html";
+                    document.getElementById("redirect").content = "1; url=fr.html";
                     document.getElementById("link").href = "fr.html";
                 } else {
-                    document.getElementById("redirect").content = "3; url=en.html";
+                    document.getElementById("redirect").content = "1; url=en.html";
                     document.getElementById("link").href = "en.html";
                 }
             });
         </script>
-        <p>Suivez <a id="link">ce lien</a>.</p>
+        <p>The redirection don't work ? Follow <a id="link">this link</a>.</p>
     </body>
 </html>
