@@ -1,0 +1,42 @@
+{
+  "title": "Clément Fossorier - Computer science student",
+
+  "nav.about": "About me",
+  "nav.skills": "Skills",
+  "nav.training": "Training",
+  "nav.personnal_projects": "Personnal projects",
+  "nav.contact": "Contact",
+  "nav.lang": "Language",
+
+  "name_box.name": "Clément Fossorier",
+  "name_box.job": "Computer science student",
+
+  "about_box.profile.title": "Profile",
+  "about_box.profile.text": "Young computer science student and beginner developer",
+  "about_box.about_me.title": "About me",
+  "about_box.informations.title": "Informations",
+  "about_box.informations.name.title": "Name:",
+  "about_box.informations.name.text": "Clément Fossorier",
+  "about_box.informations.age.title": "Age:",
+  "about_box.informations.age.text": "19 years old",
+  "about_box.informations.location.title": "Location:",
+  "about_box.informations.location.text": "Parisian region, France",
+
+  "skills_box.title": "Skills",
+  "skills_box.programming_language.title": "Programming languages",
+  "skills_box.language.title": "Languages",
+
+  "training_box.title": "Training",
+
+  "training_box.training2.date": "2021 - Now",
+  "training_box.training2.title": "Bachelor of Computer Science",
+  "training_box.training2.location": "Paris-East Créteil University, 94000 Créteil, France",
+  "training_box.training2.desc": "Second year",
+
+  "training_box.training1.date": "2018 - 2021",
+  "training_box.training1.title": "Baccalauréat général",
+  "training_box.training1.location": "Lycée Rosa Parks, 91230 Montgeron, France",
+  "training_box.training1.desc": "Specialty lessons : Computer science, Mathematics, Cinema\nOptions : Cinema\nWith honours",
+
+  "word.now.with_uppercase": "Now"
+}

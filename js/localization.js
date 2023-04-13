@@ -1,22 +1,27 @@
 let translations = {};
+const defaultLocale = "fr";
 
-const fetchContent = () => {
-    return fetch(`lang/fr.json`)
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-            translations = data;
-            translatePage();
-        });
+document.addEventListener('DOMContentLoaded', () => {
+    setLocale(defaultLocale);
+});
+
+const setLocale = async (newLocale) => {
+    translations = await fetchTranslations(newLocale);
+    translatePage();
 };
 
-fetchContent();
+const fetchTranslations = async (newLocale) => {
+    const response = await fetch(`lang/${newLocale}.json`);
+    if (!response.ok) {
+        console.log(`Could not fetch translations for locale ${newLocale}`);
+    }
+    return await response.json();
+};
 
-const translatePage = () => {
+function translatePage() {
     document.querySelectorAll('[localization-key]').forEach((element) => {
         let key = element.getAttribute('localization-key');
         let translation = translations[key];
         element.innerText = translation;
     });
-};
+}
