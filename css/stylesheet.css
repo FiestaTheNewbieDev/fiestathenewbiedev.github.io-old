@@ -1,0 +1,66 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(#303030, grey);
+}
+
+div.name-box {
+    position: relative;
+    height: 100vh;
+}
+
+div.name-box div.text-zone {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: fit-content;
+    width: 50%;
+}
+
+@media (max-width: 991.98px) {
+    div.content-box {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
+
+@media (min-width: 992px) {
+    div.content-box {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+div.about-box {
+    padding-top: 5%;
+    padding-inline: 10%;
+    padding-bottom: 5%;
+}
+
+div.skills-box {
+    padding-top: 5%;
+    padding-inline: 10%;
+    padding-bottom: 5%;
+}
+
+div.skill-item {
+    padding-left: 1%;
+    padding-right: 1%;
+    transition-duration: 0.5s;
+}
+
+div.skill-item:hover {
+    background-color: #CECECE;
+    color:white;
+}
+
+svg.icon {
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}

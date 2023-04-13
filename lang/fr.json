@@ -1,0 +1,29 @@
+{
+  "title": "Clément Fossorier - Étudiant en informatique",
+
+  "nav.about": "À propos de moi",
+  "nav.skills": "Compétences",
+  "nav.training": "Formation",
+  "nav.personnal_projects": "Projets perso",
+  "nav.contact": "Contact",
+  "nav.lang": "Langue",
+
+  "name_box.name": "Clément Fossorier",
+  "name_box.job": "Étudiant en informatique",
+
+  "about_box.profile.title": "Profil",
+  "about_box.profile.text": "Jeune étudiant en informatique et apprenti développeur.",
+  "about_box.about_me.title": "À mon propos",
+  "about_box.about_me.text": "Je suis un jeune étudiant en Informatique ainsi qu'un apprenti développeur Back End. Actuellement, j'effectue ma deuxième année de licence d'informatique à l'université Paris-Est Créteil (UPEC). Je suis également un apprenti développeur lors de mon temps libre. Grâce à mes études et mon temps libre j'ai appris à maîtriser les bases de plusieurs langages informatiques comme Java, Python, HTML, Lua etc. Cependant, les langages dont je souhaite faire ma spécialité restent Python et Java.",
+  "about_box.informations.title": "Informations",
+  "about_box.informations.name.title": "Nom:",
+  "about_box.informations.name.text": "Clément Fossorier",
+  "about_box.informations.age.title": "Âge:",
+  "about_box.informations.age.text": "19 ans",
+  "about_box.informations.location.title": "Localisation:",
+  "about_box.informations.location.text": "Région parisienne, France",
+
+  "skills_box.title": "Compétences",
+  "skills_box.programming_language.title": "Langages informatiques",
+  "skills_box.language.title": "Langues"
+}
