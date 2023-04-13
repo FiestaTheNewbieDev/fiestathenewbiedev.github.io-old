@@ -65,6 +65,28 @@ div.skill-item:hover {
     color:white;
 }
 
+p.mobile-date {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+
+p.mobile-date:before, p.mobile-date:after {
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    opacity: 0.25;
+    background-color: grey;
+}
+
+p.mobile-date:before {
+    margin-left: -50%;
+}
+
 svg.icon {
     display: block;
     margin-top: auto;
