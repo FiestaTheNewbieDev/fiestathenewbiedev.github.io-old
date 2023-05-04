@@ -2,10 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background: linear-gradient(#303030, grey);
-}
-
 div.name-box {
     transform: translateY(0px);
     position: relative;
