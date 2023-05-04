@@ -7,6 +7,7 @@ body {
 }
 
 div.name-box {
+    transform: translateY(0px);
     position: relative;
     height: 100vh;
 }
@@ -33,6 +34,16 @@ div.name-box div.text-zone {
     div.content-box {
         margin-left: 10%;
         margin-right: 10%;
+    }
+
+    nav.scroll-up {
+        transform: translateY(0);
+        transition: all 0.5s ease;
+    }
+    
+    nav.scroll-down {
+        transform: translateY(-100%);
+        transition: all 0.5s ease;
     }
 }
 
@@ -66,6 +77,7 @@ div.skill-item:hover {
 }
 
 p.mobile-date {
+    font-weight: bold;
     position: relative;
     z-index: 1;
     overflow: hidden;

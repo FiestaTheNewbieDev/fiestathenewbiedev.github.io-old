@@ -12,8 +12,9 @@
   "name_box.job": "Computer science student",
 
   "about_box.profile.title": "Profile",
-  "about_box.profile.text": "Young computer science student and beginner developer",
+  "about_box.profile.text": "Young computer science student and beginner developer.",
   "about_box.about_me.title": "About me",
+  
   "about_box.informations.title": "Informations",
   "about_box.informations.name.title": "Name:",
   "about_box.informations.name.text": "Clément Fossorier",
@@ -28,10 +29,10 @@
 
   "training_box.title": "Training",
 
-  "training_box.training2.date": "2021 - Now",
+  "training_box.training2.date": "2021 - 2023",
   "training_box.training2.title": "Bachelor of Computer Science",
   "training_box.training2.location": "Paris-East Créteil University, 94000 Créteil, France",
-  "training_box.training2.desc": "Second year",
+  "training_box.training2.desc": "First year validated ✔\nStopped during second year ❌",
 
   "training_box.training1.date": "2018 - 2021",
   "training_box.training1.title": "Baccalauréat général",

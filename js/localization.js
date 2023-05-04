@@ -1,7 +1,7 @@
 let translations = {};
 const defaultLocale = "fr";
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
     setLocale(defaultLocale);
 });
 

@@ -16,8 +16,18 @@
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    
 
-        <script src="js/localization.js"></script>
+        <script type="text/javascript" src="js/localization.js"></script>
+        <script defer type="text/javascript" src="js/script.js"></script>
+
+        <div class="name-box">
+            <div class="text-zone text-white text-center">
+                <h1 localization-key="name_box.name"></h1>
+                <hr color="white">
+                <h4 localization-key="name_box.job"></h4>
+            </div>
+        </div>
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
@@ -42,8 +52,8 @@
                     </div>
                     <div class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" localization-key="nav.lang" href="#" data-toggle="dropdown"></a>
-                        <div class="dropdown-menu dropdown-menu-right">
-                            <a class="dropdown-item" href="fr.html">
+                        <div class="dropdown-menu dropdown-menu-right slideIn">
+                            <a class="dropdown-item disabled" href="fr.html">
                                 <div class="d-flex justify-content-between">
                                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 640 480" version="1">
                                         <g fill-rule="evenodd" stroke-width="1pt">
@@ -55,7 +65,7 @@
                                     Français
                                 </div>
                             </a>
-                            <a class="dropdown-item disabled" href="en.html">
+                            <a class="dropdown-item" href="en.html">
                                 <div class="d-flex justify-content-between">
                                     <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 640 480">
                                         <defs>
@@ -81,16 +91,8 @@
             </div>
         </nav>
 
-        <div class="name-box">
-            <div class="text-zone text-white text-center">
-                <h1 localization-key="name_box.name"></h1>
-                <hr color="white">
-                <h4 localization-key="name_box.job"></h4>
-            </div>
-        </div>
-
-        <div class="content-box">
-            <div class="about-box bg-white rounded-top" id="about">
+        <div class="content-box bg-white reveal">
+            <div class="about-box rounded-top" id="about">
                 <h1 class="text-center" localization-key="about_box.profile.title"></h1>
                 <br>
                 <p class="text-center text-muted" style="font-size: 125%;" localization-key="about_box.profile.text"></p>
@@ -238,7 +240,8 @@
                     </div>
                 </div>
                 <div class="d-md-none d-sm-block">
-                    <p class="mobile-date"><b><text localization-key="word.now.with_uppercase"></text></b></p>
+                    <!--<p class="mobile-date"><text localization-key="word.now.with_uppercase"></text></p>-->
+                    <p class="mobile-date">2023</p>
                     <p>
                         <b><text localization-key="training_box.training2.title"></text></b>
                         <br>
@@ -249,7 +252,7 @@
                         <br>
                         <text localization-key="training_box.training2.desc"></text>
                     </p>
-                    <p class="mobile-date"><b>2021</b></p>
+                    <p class="mobile-date">2021</p>
                     <p>
                         <b><text localization-key="training_box.training1.title"></text></b>
                         <br>
@@ -260,7 +263,7 @@
                         <br>
                         <text localization-key="training_box.training1.desc"></text>
                     </p>
-                    <p class="mobile-date"><b>2018</b></p>
+                    <p class="mobile-date">2018</p>
                 </div>
             </div>
         </div>
