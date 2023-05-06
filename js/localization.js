@@ -1,6 +1,8 @@
 let translations = {};
 const defaultLocale = "fr";
 
+console.log("localization");
+
 document.addEventListener("DOMContentLoaded", () => {
     setLocale(defaultLocale);
 });
@@ -11,7 +13,7 @@ const setLocale = async (newLocale) => {
 };
 
 const fetchTranslations = async (newLocale) => {
-    const response = await fetch(`lang/${newLocale}.json`);
+    const response = await fetch(`/lang/${newLocale}.json`);
     if (!response.ok) {
         console.log(`Could not fetch translations for locale ${newLocale}`);
     }
