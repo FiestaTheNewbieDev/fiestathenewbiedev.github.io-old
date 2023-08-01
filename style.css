@@ -9,6 +9,8 @@ div.name-box {
 }
 
 div.name-box div.text-zone {
+    color: white;
+    text-align: center;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -19,26 +21,96 @@ div.name-box div.text-zone {
     width: 50%;
 }
 
+div.about-box {
+    background-color: white;
+    padding-top: 5%;
+    padding-inline: 10%;
+    padding-bottom: 5%;
+}
+
 img.picture {
     border-radius: 50%;
     display: block; 
     margin-inline: auto; 
     width: 75%;
-    content: url("/media/images/profile_pic.jpg");
+    content: url("/images/profile_pic.jpg");
     transform: scale(100%);
     transition: all 0.5s ease;
 }
 
 img.picture:hover {
-    content: url("/media/images/profile_pic_smiley.jpg");
+    content: url("/images/profile_pic_smiley.jpg");
     transform: scale(110%);
     transition: all 0.1s ease;
 }
 
+div.skills-box {
+    background-color: white;
+    padding-top: 5%;
+    padding-inline: 10%;
+    padding-bottom: 5%;
+}
+
+.skills-list .skill-item {
+    transition: all 0.5s ease;
+}
+
+.skills-list .skill-item:hover {
+    background-color: #CECECE;
+    color:white;
+}
+
+div.training-box {
+    background-color: white;
+    padding-top: 5%;
+    padding-inline: 10%;
+    padding-bottom: 5%;
+}
+
+p.mobile-date {
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+
+p.mobile-date:before, p.mobile-date:after {
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    opacity: 0.25;
+    background-color: grey;
+}
+
+p.mobile-date:before {
+    margin-left: -50%;
+}
+
+div.personnal-projects-box {
+    background-color: white;
+    padding-top: 5%;
+    padding-inline: 10%;
+    padding-bottom: 5%;
+}
+
+div.contact-box {
+    background-color: white;
+    padding-top: 5%;
+    padding-inline: 10%;
+    padding-bottom: 5%;
+}
+
 @media(max-width: 767.98px) {
     img.picture {
-        padding-top: 5%;
-        padding-bottom: 5%;
+        margin-bottom: 15px;
+    }
+
+    .skills-list {
+        column-count: 1;
     }
 }
 
@@ -66,6 +138,11 @@ img.picture:hover {
         transform: translateY(-100%);
         transition: all 0.5s ease;
     }
+
+    .skills-list {
+        column-count: 2;
+        column-gap: 2%;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -85,61 +162,6 @@ img.picture:hover {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
     }
-}
-
-div.about-box {
-    background-color: white;
-    padding-top: 5%;
-    padding-inline: 10%;
-    padding-bottom: 5%;
-}
-
-div.skills-box {
-    background-color: white;
-    padding-top: 5%;
-    padding-inline: 10%;
-    padding-bottom: 5%;
-}
-
-div.training-box {
-    background-color: white;
-    padding-top: 5%;
-    padding-inline: 10%;
-    padding-bottom: 5%;
-}
-
-div.skill-item {
-    padding-left: 1%;
-    padding-right: 1%;
-    transition: all 0.5s ease;
-}
-
-div.skill-item:hover {
-    background-color: #CECECE;
-    color:white;
-}
-
-p.mobile-date {
-    font-weight: bold;
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    text-align: center;
-}
-
-p.mobile-date:before, p.mobile-date:after {
-    position: absolute;
-    top: 50%;
-    overflow: hidden;
-    width: 50%;
-    height: 1px;
-    content: '\a0';
-    opacity: 0.25;
-    background-color: grey;
-}
-
-p.mobile-date:before {
-    margin-left: -50%;
 }
 
 svg.icon {
