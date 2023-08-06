@@ -1,6 +1,6 @@
 const navbar = document.querySelector("nav");
 const navbarDroppedMenus = navbar.getElementsByClassName("dropdown-menu");
-console.log(navbarDroppedMenus);
+
 let lastScroll = 0;
 
 window.addEventListener("scroll", revealNavbar)

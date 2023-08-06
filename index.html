@@ -1,22 +1,310 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Redirecting to another URL</title>
-        <meta id="redirect" http-equiv="Refresh"/>
+        <meta charset="utf-8">
+        <meta name=”viewport” content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <title localization-key="title"></title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                var userLang = navigator.language || navigator.userLanguage;
-                if(userLang == "fr-FR") {
-                    document.getElementById("redirect").content = "1; url=fr.html";
-                    document.getElementById("link").href = "fr.html";
-                } else {
-                    document.getElementById("redirect").content = "1; url=en.html";
-                    document.getElementById("link").href = "en.html";
-                }
-            });
-        </script>
-        <p>The redirection don't work ? Follow <a id="link">this link</a>.</p>
+    <body class="bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <div class="navbar-nav ml-auto">
+                    <div class="nav-item">
+                        <a class="nav-link" localization-key="nav.about" href="#about"></a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" localization-key="nav.skills" href="#skills"></a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" localization-key="nav.training" href="#training"></a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link disabled" localization-key="nav.personnal_projects" href="#"></a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" localization-key="nav.contact" href="#contact"></a>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" localization-key="nav.lang" href="#" data-toggle="dropdown"></a>
+                        <div class="dropdown-menu dropdown-menu-right animated">
+                            <button class="dropdown-item" onclick="setLocale('fr')">
+                                <div class="d-flex justify-content-between">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 640 480" version="1">
+                                        <g fill-rule="evenodd" stroke-width="1pt">
+                                            <path fill="#fff" d="M0 0h640v480H0z" />
+                                            <path fill="#00267f" d="M0 0h213.337v480H0z" />
+                                            <path fill="#f31830" d="M426.662 0H640v480H426.662z" />
+                                        </g>
+                                    </svg>
+                                    Français
+                                </div>
+                            </button>
+                            <button class="dropdown-item" onclick="setLocale('en')">
+                                <div class="d-flex justify-content-between">
+                                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 640 480">
+                                        <defs>
+                                            <clipPath id="a">
+                                                <path fill-opacity=".67" d="M-85.333 0h682.67v512h-682.67z" />
+                                            </clipPath>
+                                        </defs>
+                                        <g clip-path="url(#a)" transform="matrix(.94 0 0 .94 80 0)">
+                                            <g stroke-width="1pt">
+                                                <path fill="#006" d="M-256 0H768.02v512.01H-256z" />
+                                                <path d="M-256 0v57.244l909.535 454.768H768.02V454.77L-141.515 0H-256zM768.02 0v57.243L-141.515 512.01H-256v-57.243L653.535 0H768.02z" fill="#fff" />
+                                                <path d="M170.675 0v512.01h170.67V0h-170.67zM-256 170.67v170.67H768.02V170.67H-256z" fill="#fff" />
+                                                <path d="M-256 204.804v102.402H768.02V204.804H-256zM204.81 0v512.01h102.4V0h-102.4zM-256 512.01L85.34 341.34h76.324l-341.34 170.67H-256zM-256 0L85.34 170.67H9.016L-256 38.164V0zm606.356 170.67L691.696 0h76.324L426.68 170.67h-76.324zM768.02 512.01L426.68 341.34h76.324L768.02 473.848v38.162z" fill="#c00" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    English
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="name-box">
+            <div class="text-zone">
+                <h1 localization-key="name_box.name"></h1>
+                <hr color="white">
+                <h4 localization-key="name_box.job"></h4>
+            </div>
+            <!--
+            <div class="text-zone">
+                <h2 style="color: #1E7FCB;">public class <text style="color: #00FE7E;">Clement</text> extends <text style="color: #00FE7E;">ComputerScienceStudent</text> <text style="color: #F6DC12;">{</text></h2>
+                    <h2 style="margin-left: 10%; color: #1E7FCB;">public <text style="color: #FFFF6B;">Clement</text><text style="color: #F9429E;">() {</text></h2>
+                        <h2 style="margin-left: 20%; color: #00FE7E;">String <text style="color: lightskyblue;">name</text> <text style="color: white;">=</text> <text style="color: orange;">"<text localization-key="name_box.name"></text>"</text><text style="color: white;">;</text></h2>
+                        <h2 style="margin-left: 20%; color: #00FE7E;">String <text style="color: lightskyblue;">role</text> <text style="color: white;">=</text> <text style="color: orange;">"<text localization-key="name_box.job"></text>"</text><text style="color: white;">;</text></h2>
+                    <h2 style="margin-left: 10%; color: #F9429E;">}</h2>
+                <h2 style="color: #F6DC12;">}</h2>
+            </div>
+            -->
+        </div>
+
+        <div class="content-box">
+            <div class="about-box" id="about">
+                <h1 localization-key="about_box.profile.title"></h1>
+                <br />
+                <p class="text-center text-muted" style="font-size: 125%;" localization-key="about_box.profile.text"></p>
+                <hr />
+                <div class="row">
+                    <div class="col-md">
+                        <h2 localization-key="about_box.about_me.title"></h2>
+                        <br />
+                        <p class="text-muted" localization-key="about_box.about_me.text"></p>
+                    </div>
+                    <div class="col-md position-relative">
+                        <img class="picture"> 
+                    </div>
+                    <div class="col-lg">
+                        <h2 localization-key="about_box.informations.title"></h2>
+                        <br />
+                        <p>
+                            <b><text localization-key="about_box.informations.name.title"></text></b>
+                            <br />
+                            <text class="text-muted" localization-key="about_box.informations.name.text"></text>
+                        </p>
+                        <p>
+                            <b><text localization-key="about_box.informations.age.title"></text></b>
+                            <br />
+                            <text class="text-muted" localization-key="about_box.informations.age.text"></text>
+                        </p>
+                        <p>
+                            <b><text localization-key="about_box.informations.location.title"></text></b>
+                            <br />
+                            <text class="text-muted" localization-key="about_box.informations.location.text"></text>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-box" id="skills">
+                <h1 localization-key="skills_box.title"></h1>
+                <hr />
+                <h2 localization-key="skills_box.programming_language.title"></h2>
+                <br />
+                <div class="skills-list">
+                    <div class="d-flex justify-content-between skill-item">
+                        <p>Java</p>
+                        <p>☆★★★★</p>
+                    </div>
+                    <div class="d-flex justify-content-between skill-item">                            
+                        <p>HTML</p>
+                        <p>☆★★★★</p>
+                    </div>
+                    <div class="d-flex justify-content-between skill-item">
+                        <p>CSS</p>
+                        <p>☆☆★★★</p>
+                    </div>
+                    <div class="d-flex justify-content-between skill-item">
+                        <p>Bootstrap Framework</p>
+                        <p>☆☆★★★</p>
+                    </div>
+                    <div class="d-flex justify-content-between skill-item">
+                        <p>Laravel Framework</p>
+                        <p>☆☆★★★</p>
+                    </div>
+                    <div class="d-flex justify-content-between skill-item">                           
+                        <p>MySQL</p>
+                        <p>☆☆☆★★</p>
+                    </div>
+                    <div class="d-flex justify-content-between skill-item">
+                        <p>PHP</p>
+                        <p>☆☆☆★★</p>
+                    </div>                        
+                    <div class="d-flex justify-content-between skill-item">
+                        <p>Python</p>
+                        <p>☆☆☆★★</p>
+                    </div>
+                    <div class="d-flex justify-content-between skill-item">
+                        <p>JavaScript</p>
+                        <p>☆☆☆★★</p>
+                    </div>
+                    <div class="d-flex justify-content-between skill-item">
+                        <p>C</p>
+                        <p>☆☆☆☆★</p>
+                    </div>
+                    <div class="d-flex justify-content-between skill-item">
+                        <p>C#</p>
+                        <p>☆☆☆☆★</p>
+                    </div>
+                </div>
+                <br />
+                <h2 localization-key="skills_box.language.title"></h2>
+                <br />
+                <div class="skills-list">
+                    <div class="d-flex justify-content-between skill-item">
+                        <p>Français</p>
+                        <p>★★★★★</p>
+                    </div>
+                    <div class="d-flex justify-content-between skill-item">
+                        <p>English</p>
+                        <p>☆☆★★★</p>
+                    </div>
+                    <div class="d-flex justify-content-between skill-item">
+                        <p>Deutsch</p>
+                        <p>☆☆☆☆★</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="training-box" id="training">
+                <h1 localization-key="training_box.title"></h1>
+                <hr class="d-none d-md-block">
+                <div class="d-none d-md-block">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="font-weight-bold">2021 - 2023</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                <b><text localization-key="training_box.training2.title"></text></b>
+                                <br />
+                                <a href="https://goo.gl/maps/YoGGC4r7bgeyrgv69" target="_blank">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <text localization-key="training_box.training2.location"></text>
+                                </a>
+                                <br />
+                                <text localization-key="training_box.training2.desc"></text>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p class="font-weight-bold">2018 - 2021</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                <b><text localization-key="training_box.training1.title"></text></b>
+                                <br />
+                                <a href="https://goo.gl/maps/q4QyWRFqiXUzXbT37" target="_blank">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    <text localization-key="training_box.training1.location"></text>
+                                </a>
+                                <br />
+                                <text localization-key="training_box.training1.desc"></text>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-md-none d-sm-block">
+                    <!--<p class="mobile-date"><text localization-key="word.now.with_uppercase"></text></p>-->
+                    <p class="mobile-date">2023</p>
+                    <p>
+                        <b><text localization-key="training_box.training2.title"></text></b>
+                        <br />
+                        <a href="https://goo.gl/maps/YoGGC4r7bgeyrgv69" target="_blank">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <text localization-key="training_box.training2.location"></text>
+                        </a>
+                        <br />
+                        <text localization-key="training_box.training2.desc"></text>
+                    </p>
+                    <p class="mobile-date">2021</p>
+                    <p>
+                        <b><text localization-key="training_box.training1.title"></text></b>
+                        <br />
+                        <a href="https://goo.gl/maps/q4QyWRFqiXUzXbT37" target="_blank">
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <text localization-key="training_box.training1.location"></text>
+                        </a>
+                        <br />
+                        <text localization-key="training_box.training1.desc"></text>
+                    </p>
+                    <p class="mobile-date">2018</p>
+                </div>
+            </div>
+
+            <!--
+            <div class="personnal-projects-box">
+                <h1 ></h1>
+                <br />
+                <hr />
+            </div>
+            -->
+
+            <div class="contact-box" id="contact">
+                <h1 localization-key="contact_box.title"></h1>
+                <hr />
+                <div class="row">
+                    <div class="col-md-6">
+                    </div>
+                    <div class="col-md-6">
+                        <form class="form-group contact-form" id="contactForm" action="https://formspree.io/f/xdorawky" method="POST">
+                            <label localization-key="contact_box.contact_form.name"></label>
+                            <input class="form-control" type="text" id="nameInput" name="name" onkeyup="checkContactForm()">         
+                            <label localization-key="contact_box.contact_form.mail"></label>
+                            <input class="form-control" type="email" id="emailInput" name="email" onkeyup="checkContactForm()">
+                            <label localization-key="contact_box.contact_form.phone"></label>
+                            <input class="form-control" type="tel" id="phoneInput" name="phone">
+                            <label localization-key="contact_box.contact_form.request"></label>
+                            <textarea class="form-control" style="resize: none;" rows="10" id="messageInput" name="message" onkeyup="checkContactForm()"></textarea>
+                            <button class="btn btn-primary mt-3" id="submitInput" type="submit" localization-key="contact_box.contact_form.send"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    
+        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
+        <script type="text/javascript" src="js/localization.js"></script>
+        <script type="text/javascript" src="js/nav.js"></script>
+        <script type="text/javascript" src="js/contact.js"></script>
     </body>
 </html>

@@ -25,7 +25,7 @@ div.about-box {
     background-color: white;
     padding-top: 5%;
     padding-inline: 10%;
-    padding-bottom: 5%;
+    padding-bottom: 2.5%;
 }
 
 img.picture {
@@ -46,9 +46,8 @@ img.picture:hover {
 
 div.skills-box {
     background-color: white;
-    padding-top: 5%;
+    padding-block: 2.5%;
     padding-inline: 10%;
-    padding-bottom: 5%;
 }
 
 .skills-list .skill-item {
@@ -62,9 +61,8 @@ div.skills-box {
 
 div.training-box {
     background-color: white;
-    padding-top: 5%;
+    padding-block: 2.5%;
     padding-inline: 10%;
-    padding-bottom: 5%;
 }
 
 p.mobile-date {
@@ -92,16 +90,14 @@ p.mobile-date:before {
 
 div.personnal-projects-box {
     background-color: white;
-    padding-top: 5%;
+    padding-block: 2.5%;
     padding-inline: 10%;
-    padding-bottom: 5%;
 }
 
 div.contact-box {
     background-color: white;
-    padding-top: 5%;
+    padding-block: 2.5%;
     padding-inline: 10%;
-    padding-bottom: 5%;
 }
 
 @media(max-width: 767.98px) {
@@ -147,21 +143,32 @@ div.contact-box {
 
 @media (max-width: 991.98px) {
     div.content-box {
-        margin-left: 0%;
-        margin-right: 0%;
+        width: 100%;
+        margin-inline: 0;
     }
 }
 
 @media (min-width: 992px) {
     div.content-box {
-        margin-left: 10%;
-        margin-right: 10%;
+        width: calc(100% - 50px);
+        margin-inline: 25px;
     }
 
     div.about-box {
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
     }
+}
+
+@media (min-width: 1602px) {
+    div.content-box {
+        width: 1552px;
+        margin-inline: auto;
+    }
+}
+
+h1 {
+    text-align: center;
 }
 
 svg.icon {

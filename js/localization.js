@@ -1,10 +1,9 @@
 let translations = {};
-const defaultLocale = "fr";
 
-console.log("localization");
-
-document.addEventListener("DOMContentLoaded", () => {
-    setLocale(defaultLocale);
+window.addEventListener("DOMContentLoaded", () => {
+    var userLang = navigator.language || navigator.userLanguage;
+    if(userLang == "fr-FR") setLocale("fr");
+    else setLocale("en");
 });
 
 const setLocale = async (newLocale) => {

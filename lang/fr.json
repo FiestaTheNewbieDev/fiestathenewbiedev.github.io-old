@@ -29,15 +29,20 @@
 
   "training_box.title": "Formation",
 
-  "training_box.training2.date": "2021 - 2023",
   "training_box.training2.title": "Licence informatique",
   "training_box.training2.location": "Université Paris-Est Créteil, 94000 Créteil",
   "training_box.training2.desc": "Première année validée ✔\nArrêt en cours de seconde année ❌",
 
-  "training_box.training1.date": "2018 - 2021",
   "training_box.training1.title": "Baccalauréat général",
   "training_box.training1.location": "Lycée Rosa Parks, 91230 Montgeron",
   "training_box.training1.desc": "Enseignements de spécialité : Informatique, Mathématiques, Cinéma\nOptions : Cinéma\nMention assez bien",
+
+  "contact_box.title": "Contact",
+  "contact_box.contact_form.name": "Nom/Société*",
+  "contact_box.contact_form.mail": "Adresse mail*",
+  "contact_box.contact_form.phone": "Numéro de téléphone",
+  "contact_box.contact_form.request": "Votre requête*",
+  "contact_box.contact_form.send": "Envoyer",
 
   "word.now.with_uppercase": "Maintenant"
 }

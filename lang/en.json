@@ -14,7 +14,7 @@
   "about_box.profile.title": "Profile",
   "about_box.profile.text": "Young computer science student and beginner developer.",
   "about_box.about_me.title": "About me",
-  
+  "about_box.about_me.text": "My name is Clément Fossorier, and I am a student in computer science, as well as an apprentice developer.\nAfter stopping my second year of computer science studies at the University Paris-Est Créteil (UPEC), I am preparing to enter ETNA: a work-study school in computer science.\nBeing passionate about computer science, especially development, I have learned to master the basics of several programming languages, including Java, PHP, HTML/CSS, Python, etc.",
   "about_box.informations.title": "Informations",
   "about_box.informations.name.title": "Name:",
   "about_box.informations.name.text": "Clément Fossorier",
@@ -29,15 +29,20 @@
 
   "training_box.title": "Training",
 
-  "training_box.training2.date": "2021 - 2023",
   "training_box.training2.title": "Bachelor of Computer Science",
   "training_box.training2.location": "Paris-East Créteil University, 94000 Créteil, France",
   "training_box.training2.desc": "First year validated ✔\nStopped during second year ❌",
 
-  "training_box.training1.date": "2018 - 2021",
   "training_box.training1.title": "Baccalauréat général",
   "training_box.training1.location": "Lycée Rosa Parks, 91230 Montgeron, France",
   "training_box.training1.desc": "Specialty lessons : Computer science, Mathematics, Cinema\nOptions : Cinema\nWith honours",
+
+  "contact_box.title": "Contact",
+  "contact_box.contact_form.name": "Name/Company*",
+  "contact_box.contact_form.mail": "Mail adress*",
+  "contact_box.contact_form.phone": "Phone number",
+  "contact_box.contact_form.request": "Your request*",
+  "contact_box.contact_form.send": "Send",
 
   "word.now.with_uppercase": "Now"
 }
