@@ -14,7 +14,7 @@
   "about_box.profile.title": "Profil",
   "about_box.profile.text": "Jeune étudiant en informatique et apprenti développeur.",
   "about_box.about_me.title": "À mon propos",
-  "about_box.about_me.text": "Je me nomme Clément Fossorier et je suis Étudiant en informatique ainsi qu'apprenti développeur.\nSuite à l'arrêt de ma seconde année de licence d'informatique à l'université Paris-Est Créteil (UPEC), je prépare mon entrée à l'ETNA: école d'alternance en informatique.\nÉtant passionné par l'informatique et plus particulièrement le développement, j'ai appris à maîtriser les bases de plusieurs langages informatiques, parmis ceux-ci Java, PHP, HTML/CSS, Python etc.",
+  "about_box.about_me.text": "Je me nomme Clément Fossorier et je suis Étudiant en informatique ainsi qu'apprenti développeur! Je suis actuellement étudiant en année préparatoire à l’École des Technologies Numériques Avancées (ETNA) afin d’obtenir un diplôme de chargé de projets informatiques. Étant passionné par l'informatique et plus particulièrement le développement, j'ai appris à maîtriser les bases de plusieurs langages informatiques, parmis ceux-ci Java, PHP, HTML/CSS, Python et bien d'autres! Je vous invite d'ailleurs à visiter cette page pour en apprendre plus sur moi et connâitre l'ensemble de mes compétences.",
   "about_box.informations.title": "Informations",
   "about_box.informations.name.title": "Nom:",
   "about_box.informations.name.text": "Clément Fossorier",
@@ -24,10 +24,14 @@
   "about_box.informations.location.text": "Région parisienne, France",
 
   "skills_box.title": "Compétences",
-  "skills_box.programming_language.title": "Langages informatiques",
+  "skills_box.technologies.title": "Technologies",
   "skills_box.language.title": "Langues",
 
   "training_box.title": "Formation",
+
+  "training_box.training3.title": "Année Préparatoire accélérée - Chargé de projets informatiques",
+  "training_box.training3.location": "École des Technologies Numériques Avancées (ETNA), 94200 Ivry-sur-Seine, France",
+  "training_box.training3.desc": "",
 
   "training_box.training2.title": "Licence informatique",
   "training_box.training2.location": "Université Paris-Est Créteil, 94000 Créteil",

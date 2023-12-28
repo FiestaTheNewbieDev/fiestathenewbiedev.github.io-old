@@ -14,7 +14,7 @@
   "about_box.profile.title": "Profile",
   "about_box.profile.text": "Young computer science student and beginner developer.",
   "about_box.about_me.title": "About me",
-  "about_box.about_me.text": "My name is Clément Fossorier, and I am a student in computer science, as well as an apprentice developer.\nAfter stopping my second year of computer science studies at the University Paris-Est Créteil (UPEC), I am preparing to enter ETNA: a work-study school in computer science.\nBeing passionate about computer science, especially development, I have learned to master the basics of several programming languages, including Java, PHP, HTML/CSS, Python, etc.",
+  "about_box.about_me.text": "My name is Clément Fossorier, and I am a student in computer science as well as an apprentice developer! I am currently studying in a preparatory year at the École des Technologies Numériques Avancées (ETNA) to obtain a degree in IT project management. Passionate about computer science and particularly development, I have mastered the basics of several programming languages, including Java, PHP, HTML/CSS, Python, and many others! I also invite you to visit this page to learn more about me and discover all my skills.",
   "about_box.informations.title": "Informations",
   "about_box.informations.name.title": "Name:",
   "about_box.informations.name.text": "Clément Fossorier",
@@ -24,10 +24,14 @@
   "about_box.informations.location.text": "Parisian region, France",
 
   "skills_box.title": "Skills",
-  "skills_box.programming_language.title": "Programming languages",
+  "skills_box.technologies.title": "Technologies",
   "skills_box.language.title": "Languages",
 
   "training_box.title": "Training",
+
+  "training_box.training3.title": "Année Préparatoire accélérée - Chargé de projets informatiques",
+  "training_box.training3.location": "École des Technologies Numériques Avancées (ETNA), 94200 Ivry-sur-Seine, France",
+  "training_box.training3.desc": "",
 
   "training_box.training2.title": "Bachelor of Computer Science",
   "training_box.training2.location": "Paris-East Créteil University, 94000 Créteil, France",
